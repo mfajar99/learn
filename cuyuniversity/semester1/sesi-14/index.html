@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Piano</title>
+    <style>
+      button {
+        background-color: crimson;
+        color: white;
+        margin: 3px;
+        height: 180px;
+        width: 80px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(202, 64, 64);
+        transition: 0.3s all ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>PIANO KUY</h3>
+    <div id="note"></div>
+
+    <script>
+      const chords = ["a", "c", "d", "e", "f"];
+      const note = document.getElementById("note");
+
+      chords.forEach((chord) => {
+        const button = document.createElement("button");
+
+        button.innerText = chord;
+
+        button.addEventListener("click", () => {
+          const sound = new Audio(`/assets/${chord}.wav`);
+          sound.play();
+        });
+
+        note.appendChild(button);
+      });
+    </script>
+  </body>
+</html>

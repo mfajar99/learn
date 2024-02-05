@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body::before {
+  content: "";
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 992px) {
+  body {
+    opacity: 0.8;
+  }
+}
+
+.custom-section {
+  margin-top: 8em;
+}
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #F35CA3;
+  white-space: nowrap;
+  line-height: 1;
+}
+.custom-section h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #AABDE6;
+  white-space: nowrap;
+  line-height: 1;
+}
+.custom-section p {
+  color: #393C43;
+  font-size: 1.1rem;
+  margin-top: 2em;
+}
+.custom-section a {
+  margin-top: 1.5em;
+  display: inline-block;
+  color: white;
+  background-color: #F35CA3;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+.custom-section a:hover {
+  color: #F35CA3;
+  border: 1px solid #F35CA3;
+  background-color: transparent;
+}
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3.5em;
+    text-align: center;
+  }
+  .custom-section h2, .custom-section h3, .custom-section p {
+    text-shadow: 1px 1px 2xp rgba(57, 60, 67, 0.3);
+  }
+  .custom-section h3 {
+    color: #50555f;
+  }
+}
+
+.custom-nav .navbar-brand img {
+  width: 25px;
+  height: 25px;
+  margin-top: -7px;
+}
+.custom-nav .navbar-brand span {
+  color: #F35CA3;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 0.4em;
+}
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+  }
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link {
+  color: #F35CA3;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 2.4em;
+  transition: 0.3s color ease;
+}
+#navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #aa0c56;
+}
+#navbarNav .navbar-nav .nav-item .sign-up-bottom {
+  display: inline-block;
+  color: white;
+  background-color: #F35CA3;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

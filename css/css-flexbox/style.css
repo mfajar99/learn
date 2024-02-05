@@ -1,0 +1,41 @@
+body {
+   background: orange;
+}
+
+.flex-parent {
+   height: 400px;
+   /* width: 220px; */
+   border: 2px solid black;
+   display: flex;
+   /* align-items: stretch; */
+   /* align-content: stretch; */
+
+}
+
+.flex-child {
+   color: black;
+   background: white;
+   border: 2px solid black;
+   width: 100px;
+   height: 100px;
+}
+
+#satu {
+   /* order: 2; */
+   flex-grow: 1;
+}
+
+#dua {
+   /* order: 1; */
+   flex-grow: 2;
+}
+
+#tiga {
+   /* order: 1; */
+   flex-grow: 1;
+}
+
+#empat {
+   /* order: -1; */
+   flex-grow: 1;
+}

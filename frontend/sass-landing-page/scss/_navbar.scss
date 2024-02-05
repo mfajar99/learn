@@ -1,0 +1,43 @@
+@use 'modules/mixins';
+@use 'modules/variables';
+
+// navigation / navbar
+.custom-nav {
+   .navbar-brand {
+      img {
+         width: 25px;
+         height: 25px;
+         margin-top: -7px;
+      }
+      span {
+         color: variables.$primaryColor;
+         font-weight: 700;
+         font-size: 1.4rem;
+         margin-left: 0.4em;
+      }
+   }
+   @media screen and (max-width: 992px) {
+      margin-top: -1em;
+   }
+}
+
+#navbarNav {
+   .navbar-nav {
+      .nav-item {
+         .nav-link {
+            color: variables.$primaryColor;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-left: 2.4em;
+            transition: 0.3s color ease;
+
+            &:hover {
+               color: darken(variables.$primaryColor, 30%);
+            }
+         }
+         .sign-up-bottom {
+            @include mixins.tombol();
+         }
+      }
+   }
+}

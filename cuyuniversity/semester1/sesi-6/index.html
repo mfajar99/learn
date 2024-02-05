@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DARK MODE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a onclick="reRender()" id="home">HOME</a>
+        <a onclick="darkMode()" id="mode">MODE</a>
+      </nav>
+      <h1>SESI 6 CUY UNIVERSITY</h1>
+      <p id="info" class="info"></p>
+    </div>
+
+    <!-- initializing function script -->
+    <script type="application/javascript">
+      let body = document.body;
+      let info = document.getElementById("info");
+      let mode = document.getElementById("mode");
+      let home = document.getElementById("home");
+
+      const darkLimit = 5;
+      let darkCounter = 0;
+      let darkRemainingLeft;
+
+      function darkMode() {
+        if (darkRemainingLeft == 1) {
+          info.textContent = "💥 JATAH DARKMODE ANDA TELAH HABIS 💥";
+          mode.style.display = "none";
+          home.textContent = "RESTART";
+          //  console.log("jatah dark mode anda sudah habis");
+          return;
+        }
+
+        darkCounter += 1;
+        darkRemainingLeft = darkLimit - darkCounter;
+        //   console.log("dark mode di klik sebanyak: ", darkCounter);
+        //   console.log("kesempatan anda: ", darkRemainingLeft);
+
+        //   render ke info element
+        info.textContent = `Darkmode dipakai ${darkCounter}x`;
+
+        body.classList.toggle("dark");
+      }
+
+      function reRender() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>

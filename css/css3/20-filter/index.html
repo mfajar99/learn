@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Coba Filter</title>
+   <style>
+      body {
+         text-align: center;
+      }
+      /* Filter 
+            blur(px)
+            brightness(angka | %)
+            contrast(angka | %)
+            saturate(angka | %)
+            grayscale(angka | %)
+            sepia(angka | %)
+            hue-rotate(angka | %)
+            invert(angka | %)
+            opacity(angka | %)
+            drop-shadow(sama seperti box-shadow)
+      */
+      img {
+         /* filter: blur(3px); */
+         /* filter: brightness(200%) */
+         /* filter: contrast(200%) */
+         /* filter: saturate(200%) */
+         /* filter: grayscale(100%) */
+         /* filter: hue-rotate(100%) */
+         filter: blur(10px) grayscale(1);
+         transition: 1s;
+      }
+      img:hover {
+         filter: blur(0) grayscale(0);
+      }
+   </style>
+</head>
+<body>
+   <img src="regera.jpg" width="500" height="400" alt="muhammad fajar">
+</body>
+</html>

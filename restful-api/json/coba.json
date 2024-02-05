@@ -1,0 +1,30 @@
+ [ 
+  {
+    "nama": "Muhammad Fajar",
+    "umur": 22,
+    "nim": "023376783",
+    "lulus": true,
+    "hobby": [
+      "coding",
+      "gaming"
+    ],
+    "pembingbing": {
+      "pembingbing1": "Sholeh Rahmatullah",
+      "pembingbing2": "Nazir Arifin"
+    }
+  },
+  {
+    "nama": "Abdussalam",
+    "umur": 23,
+    "nim": "073836287",
+    "lulus": true,
+    "hobby": [
+      "coding",
+      "gaming"
+    ],
+    "pembingbing": {
+      "pembingbing1": "Fahrurridwan",
+      "pembingbing2": "Nazir Arifin"
+    }
+  }
+]

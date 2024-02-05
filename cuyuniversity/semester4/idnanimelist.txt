@@ -1,0 +1,52 @@
+IDNANIMELIST PROJECT 
+
+Sesi 2:
+1. enhancement component reusability✅
+2. (FEATURE) search input✅
+3. TUGAS BESAR✅
+- buat search inputnya menjadi bisa di enter pake keyboard tanpa merubah fungsi sebelumnya
+
+Sesi 3:
+1. fix tugas besar di sesi sebelumnya✅
+2. simple theming UI color pallate:✅
+3. halaman not found✅
+4. loadin halaman✅
+
+Sesi 4:
+1. fix tugas kecil di sesi sebelumnya (validasi seach input length)✅
+2. fix other minor issue✅
+3. feature: lihat semua + pagination✅
+
+Sesi 5:
+1. fix tugas keci di sesi sebelumnya (validaasi panation)✅
+2. reusable api call✅
+3. dataik anime + youtube trailer✅
+
+Sesi 6:
+1. fix some issues✅
+2. fitur rekomendasi anime✅
+3. tugas besar:
+- buat logic untuk memunculkan list rekomendasi anime yang berbeda setip kali halaman di buka.
+
+Sesi 7:
+1. kerjakan tugas sesi 6 (randomize anime data)✅
+2. fix minor issue di fitur pencarian✅
+
+Sesi 8:
+1. Nest Auth (User Login With Github)✅
+2. Tugas validasi routing dashboard user
+
+Sesi 9:
+1. kerjakan tugas sesei 8 (validasi route user)✅
+2. UI dashbord anime collection✅
+
+
+tugas sesi 11
+
+tugas kecil
+1. validasi input komentar (minimal 3 huruf bru komen)
+2. jika belum ada komentar munculkan dulu sesuatu
+3. modif fitur ui komentar se kreatif mungkin
+
+tuga besar
+-di fitur komentar tambahkan rating/bintang (bitang 1-5) + validasinya

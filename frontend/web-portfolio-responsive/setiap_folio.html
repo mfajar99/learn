@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portofolio SekolahKoding</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <script>
+
+    function toggleMenu(){
+      var menu = document.getElementById('menu-3');
+      //IE > 10
+      menu.classList.toggle('menu-open');
+    }
+  </script>
+  </head>
+  <body>
+
+  <div id="header">
+    <img src="asset/logo.jpg" id="logo" alt="">
+    <div id="menu">
+      <div id="menu-text" onclick="toggleMenu();">Menu</div>
+      <div class="konten" id="menu-3">
+        <a href="#pertama" class="kolom_3">Hallo</a>
+        <a href="#kedua"   class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('kedua')">Karya</a>
+        <a href="#ketiga"  class="kolom_3"                onclick="return smoothScroll('ketiga')">Kontak</a>
+      </div>
+    </div>
+
+    <div style="margin-top:50px;"></div>
+
+    <div class="konten">
+
+      <div class="panah_box panah_box_kr" onclick="ganti_sebelum()"> < </div>
+
+        <div id="karya_box">
+
+          <div id="karya_box_kr">
+            <h3>Judul Karya</h3>
+            <p class="deskripsi"> Ini contoh deskripsi yang lebih panjang dari setiap karya yang ditampilkan</p>
+          </div>
+
+          <div id="karya_box_knn">
+            <img src="asset/jsdom.png" alt="" id="target_gambar">
+          </div>
+
+        </div>
+
+      <div class="panah_box panah_box_knn" onclick="ganti_berikut()"> > </div>
+
+      <div class="clear"></div>
+
+      <div id="karya_lain">
+        <img src="asset/jsdom.png" alt=""     onclick="ganti_gambar(this)" class="0">
+        <img src="asset/js-dasar.png" alt=""  onclick="ganti_gambar(this)" class="1">
+        <img src="asset/js-objek.png" alt=""  onclick="ganti_gambar(this)" class="2">
+      </div>
+    </div>
+
+  <div class="clear"></div>
+  <div id="footer">
+    <p> &copy; SekolahKoding 2015 </p>
+  </div>
+
+  <script src="folio.js"></script>
+</body>
+</html>

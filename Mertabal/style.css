@@ -1,0 +1,29 @@
+.frame {
+   position: absolute;
+   height: 400px;
+   width: 400px;
+   background: #111;
+   border-radius: 5px;
+   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.4);
+   filter: contrast(25);
+}
+
+.center {
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, 50%);
+}
+
+.ball {
+   position: relative;
+   width: 90px;
+   height: 90px;
+   background: whitesmoke;
+   border-radius: 50%;
+   filter: blur(15px);
+}
+
+.bubble-1 {
+   position: ab;
+}

@@ -1,0 +1,49 @@
+@use 'modules/mixins';
+@use 'modules/variables';
+
+// custom section
+.custom-section {
+   margin-top: 8em;
+   h2 {
+      font-weight: 700;
+      font-size: 4rem;
+      color: variables.$primaryColor;
+      white-space: nowrap;
+      line-height: 1;
+   }
+   h3 {
+      font-weight: 400;
+      font-size: 3rem;
+      color: variables.$secondaryColor;
+      white-space: nowrap;
+      line-height: 1;
+   }
+   p {
+      color: variables.$textColor;
+      font-size: 1.1rem;
+      margin-top: 2em;
+   }
+   a {
+      margin-top: 1.5em;
+      @include mixins.tombol();
+      border: 1px solid transparent;
+      transition: 0.5s ease;
+
+      &:hover {
+         color: variables.$primaryColor;
+         border: 1px solid variables.$primaryColor;
+         background-color: transparent;
+      }
+   }
+
+   @media screen and (max-width: 992px) {
+      margin-top: 3.5em;
+      text-align: center;
+      h2, h3, p {
+         text-shadow: 1px 1px 2xp rgba(variables.$textColor, 0.3);
+      }
+      h3 {
+         color: lighten(variables.$textColor, 10%);
+      }
+   }
+}

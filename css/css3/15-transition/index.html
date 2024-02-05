@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Transition</title>
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+      }
+      .container {
+         width: 900px;
+         margin: 10px auto;
+         border: 5px solid black;
+      }
+      /* 
+         animation properties             non-anitable properties
+            background-color                  font-family
+            background-position               display
+            background-size                   position
+            border                            ...
+            color
+            filter
+            font-size
+            top left botton right
+            margin padding
+            width height
+            opacity
+            transform
+            word-spacing
+            letter-spacing
+            ...
+      */
+      .kotak {
+         width: 100px;
+         height: 100px;
+         background-color: salmon;
+         /* transition: margin-left 10ms; */
+         transition: margin-left 2s;
+      }
+      .container:hover .kotak {
+         transform: rotate(720deg);
+         margin-left: 800px;
+         background-color: blue;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="container">
+      <div class="kotak"></div>
+   </div>  
+   
+</body>
+</html>

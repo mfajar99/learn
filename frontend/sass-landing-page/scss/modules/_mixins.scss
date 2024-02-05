@@ -1,0 +1,11 @@
+@use 'variables';
+
+// Mixin
+@mixin  tombol {
+   display: inline-block;
+   color: white;
+   background-color: variables.$primaryColor;
+   border-radius: 2em;
+   padding: 0.5em 2em;
+   text-decoration: none;
+}
